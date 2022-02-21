@@ -1,86 +1,177 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600&display=swap');
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Dosis', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600&display=swap");
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Dosis", sans-serif;
 }
-a{
-    text-decoration: none;
-    color: #fff;
+a {
+	text-decoration: none;
+	color: #fff;
 }
-.container{
-    width: 80%;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
+.container {
+	width: 80%;
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
 }
 
-.hero{
-    height: 100vh;
-    width: 100%;
-    background:  url(../images/header-background.jpg) no-repeat ;
-    background-size: cover ;
-    text-align: center;
+.hero {
+	height: 100vh;
+	width: 100%;
+	background: url(../images/header-background.jpg) no-repeat;
+	background-size: cover;
+	text-align: center;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+}
+.navbar {
+	height: 80px;
+	width: 100%;
+	margin: 30px auto;
+	justify-content: center;
+	align-items: center;
+}
+.navbar a {
+	margin: 0 20px;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: bold;
+}
+.hero-content {
+	color: #fff;
+	padding: 0 30px;
+	margin-top: 50px;
+	justify-content: center;
+	align-items: center;
+}
+.hero-content h1 {
+	font-size: 80px;
+	font-weight: bold;
+	margin: 15px auto;
+}
+.hero-content p {
+	font-size: 18px;
+	letter-spacing: 3px;
+	margin: 10px 100px;
+}
+.hero-content hr {
+	width: 500px;
+	height: 1px;
+	border: none;
+	background-color: #fff;
+	margin: 30px auto;
+}
+.hero-content a {
+	margin: 10px 30px;
+}
+.about {
+	height: 100vh;
+	background-color: grey;
+}
+.about-content {
+	display: flex;
+}
+.about-profile-pic {
+	height: 300px;
+	width: 30%;
+    padding: 0 1.5em;
+	border-radius: 50%;
+	margin: 30px;
     overflow: hidden;
-    justify-content: center;
-    align-items: center;
+    object-fit: contain;
 }
-.navbar{
-    height: 80px;
-    width: 100%;
-    margin: 30px auto;
-    justify-content: center;
-    align-items: center;
+.about-profile-pic img {
+	object-fit: contain;
+	max-width: 100%;
+	height: 300px;
 }
-.navbar a{
-    margin: 0 20px;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: bold;
+.about-details {
+    width: 70%;
+	margin: 30px;
+	padding: 0 30px;
 }
-.hero-content{
-    color: #fff;
-    padding: 0 30px;
-    margin-top: 50px;
-    justify-content: center;
-    align-items: center;
+.about-details h1 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 5px;
 }
-.hero-content h1{
-    font-size: 80px;
-    font-weight: bold;
-    margin: 15px auto;
+.about-details p{
+    margin: 1.5em 0;
+    font-size: 14px;
+    word-spacing: 0.2em;
+    line-height: 1.5em;
 }
-.hero-content p{
-    font-size: 18px;
-    letter-spacing: 3px;
-    margin: 10px 100px;
-}
-.hero-content hr{
-    width: 500px;
-    height: 1px;
-    border: none;
-    background-color: #fff;
-    margin: 30px auto;
-}
-.hero-content a{
-    margin: 10px 30px;
-}
-.about{
-    height: 100vh;
-    background-color: grey;
-}
-.about-content{
+.contact-details{
     display: flex;
 }
-.about-profile-pic{
-    height: 300px;
-    width: 300px;g
-    margin: 30px;
-    overflow: hidden;
+.contact-details button{
+    height: 40px;
+    width: 50%;
+    margin: 30px auto;
+    font-size: 16px;
+    padding: 2rem auto;
+    border: groove;
+    cursor: pointer;
 }
-.about-profile-pic img{
-    object-fit: contain;
-    max-width: 100%;
-    max-height: 100%;
+.qualifications{
+    height: 100vh;
+}
+.qualifications-container{
+    display: flex;
+}
+.qualifications-left-content{
+    width: 30%;
+    margin: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+.qualifications-left-content h1{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+}
+.qualifications-left-content hr{
+    height: 0.2rem;
+    width: 7em;
+    margin: 0.5rem;
+    border: none;
+    background-color: #000;
+}
+.qualifications-right-content{
+    width: 70%;
+    margin: 3em;
+}
+.qualifications-right-content h1{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.qualifications-right-content p{
+    font-size: 18px;
+    word-spacing: 0.2rem;
+    line-height: 2rem;
+    margin: 1rem 0;
+}
+.experience-container{
+    display: flex;
+}
+.exeperience-left-content{
+    width: 30%;
+    margin: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+
+}
+.exeperience-left-content{
+    width: 70%;
+    margin: 3em;
 }
